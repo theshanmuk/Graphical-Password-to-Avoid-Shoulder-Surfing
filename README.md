@@ -1,5 +1,5 @@
 # Graphical-Password-to-Avoid-Shoulder-Surfing
-* We the team developed two method Graphical Password Authentication System for Signup &amp; Login || Cyber Security Internship ||
+* We the team developed two method Graphical Password Authentication System || Cyber Security Internship ||
 * Signup &amp; Login Authentication Using Flask
 * Password Hashing - SHA256
 
@@ -15,7 +15,7 @@
 
 > ## :heavy_check_mark:Heroku App
 <p align="center">
-  <img widht ="300" height="300" src="https://graphical-password-cs-intern.herokuapp.com/">
+  <a href="https://graphical-password-cs-intern.herokuapp.com/">Go To Website </a>
 </p>
   
 

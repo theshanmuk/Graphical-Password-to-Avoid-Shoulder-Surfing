@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title"> Welcome, {{ name }}! </h1><br><br><br>
+  <div >
+    <h5  style="text-shadow: 2px 4px 4px dimgrey;font-size:20px;">A C C O U N T - D E T A I L S</h5><br>
+    <table style="box-shadow: 2px 5px 25px  dimgray">
+        <tr>
+            <td>Username:</td>
+            <td  style="color:Green;font-size:25px;">{{ username }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td style="color:red;font-size:25px;"> {{ password }}</td>
+        </tr>
+        <tr>
+            <td>Email ID:</td>
+            <td style="color:dimgray;font-size:25px;">{{ email }}</td>
+        </tr>
+    </table>
+</div>
+
+<style>
+         table, th, td {
+             color: darkslategrey;
+             font-size:25px;
+             border-radius:10px;
+             background: whitesmoke;
+             padding: 10px;
+             width: 50px;
+             height:50px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         .title{
+             text-shadow: 2px 4px 4px dimgrey;
+             font-size: 50px;
+             font-family:Harrington;
+         }
+</style>
+
+{% endblock %}

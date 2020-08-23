@@ -56,7 +56,7 @@
 </p>
   
 
-<p align="center">https://user-images.githubusercontent.com/55943851/90972338-dfdc3700-e535-11ea-9c30-6a9cdbf31516.png
+<p align="center">
   <a href="https://www.google.com/search?q=Shanmuk+Michael&rlz=1C1GCEA_enIN857IN857&oq=Shanmuk+Michael&aqs=chrome..69i57j69i60l3.9741j0j8&sourceid=chrome&ie=UTF-8">S h a n m u k</a><br>
   <br>
     <b>Cybersecurity Keen | Android & Game Developer | Artist</b>

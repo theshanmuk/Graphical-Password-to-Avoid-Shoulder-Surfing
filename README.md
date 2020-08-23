@@ -13,7 +13,7 @@
 - psycopg2
 - alembic
 
-> ## :heavy_check_mark:Heroku A
+> ## :heavy_check_mark:Heroku App
 <p align="center">
   <a href="https://graphical-password-cs-intern.herokuapp.com/">Go To Website </a>
 </p>
@@ -22,7 +22,7 @@
   <img widht ="300" height="300" src="https://user-images.githubusercontent.com/55943851/90972335-db178300-e535-11ea-9f7e-c2bf8b10a66b.png"><img widht ="300" height="300" src="https://user-images.githubusercontent.com/55943851/90972381-2d58a400-e536-11ea-973a-3dd2a506c4cc.png">
    <img widht ="300" height="300" src="https://user-images.githubusercontent.com/55943851/90972403-55e09e00-e536-11ea-8e5b-ade97e96fb6f.png">
   <img widht ="300" height="300" src="https://user-images.githubusercontent.com/55943851/90972338-dfdc3700-e535-11ea-9c30-6a9cdbf31516.png">
-    <img widht ="300" height="300" src="  https://user-images.githubusercontent.com/55943851/90972452-c2f43380-e536-11ea-9add-9ad31b9d9ac4.png">
+   <img widht ="300" height="300" src="https://user-images.githubusercontent.com/55943851/90972452-c2f43380-e536-11ea-9add-9ad31b9d9ac4.png">
 
   
 

@@ -26,7 +26,7 @@
 *  ```pip install -r requirements.txt``` to install dependencies
 * ```python3 -m venv <env name>``` to create virtual environment
 * ```<env name>\scripts\activate``` 
-* ```SET FLASK_APP=project``` here app is "flask_project" folder
+* ```SET FLASK_APP=flask_project``` here app is "flask_project" folder
 * ```SET FLASK_DEBUG=1```
 * ```flask run```
 
@@ -34,7 +34,7 @@
 * ```pip install -r requirements.txt``` to install dependencies
 * ```python3 -m venv <env name>``` to create virtual environment
 * ```source <env name>\scripts\activate``` 
-* ```export FLASK_APP=project``` here app is "flask_project" folder
+* ```export FLASK_APP=flask_project``` here app is "flask_project" folder
 * ```export FLASK_DEBUG=1```
 * ```flask run```
 

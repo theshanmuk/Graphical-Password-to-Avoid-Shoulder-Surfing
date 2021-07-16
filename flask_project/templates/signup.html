@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="notification is-danger" >
+        {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+    </div>
+{% endif %}
+{% endwith %}
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('input[type="radio1"]').click(function () {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".selectt").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+</script>
+<div class="is-offset-4 is-4 selectt" style="float:left;font-size:60px;text-shadow: 2px 4px 4px dimgrey; text-align: left";>
+    PICK<br>YOUR<br><p style="color: GREEN">PASSWORD</p>TYPE<br>FOR<br><p style="color: red">SIGNUP</p></div>
+    <div class="row column is-14">
+    <div class="center selectt is-offset-4" style="float: right">
+    <label class="lbb btn-primary"><input type="radio1"  name="radio"  value="gp_1" style="display: none">Image based Graphical Password</label>
+    <br><br><br><br><br>
+    <label class="lbb btn-primary"><input type="radio1" name="radio" value="gp_2" style="display: none">Position based Graphical Password</label>
+    </div>
+
+    <div class="column gp_1 selectt gp_2 selectt" style="margin:0;float: left;display: none">
+    <label class="lbb btn-primary"><input type="radio1" name="radio" value="gp_1" style="display: none">Image based Graphical Password</label>
+    <br><br><br><br><br>
+    <label class="lbb btn-primary"><input type="radio1" name="radio" value="gp_2" style="display: none">Position based Graphical Password</label>
+    </div>
+</div>
+
+<div class="gp_1 selectt" style="display: none">
+    <div class="column is-5 is-offset-6">
+    <div class="box" style="box-shadow: 2px 5px 25px  dimgray;float: right; width: 550px;">
+           <h3 class="title" style="color: lightseagreen; text-shadow: 2px 5px 20px  gainsboro;">Sign Up</h3>
+        <form method="POST" action="/signup">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lab">P A S S W O R D</label>
+
+                {% include 'graphical_password_1.html' %}
+
+                <h5 style="color: red;font-size: 15px;">NOTE: Password must be minimum 4 selections</h5>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+
+<div class="gp_2 selectt" style="display: none">
+    <div class="column is-5 is-offset-6">
+    <div class="box" style="box-shadow: 2px 5px 25px  dimgray;float: right; width: 550px;">
+           <h3 class="title" style="color: lightseagreen; text-shadow: 2px 5px 20px  gainsboro;">Sign Up</h3>
+        <form method="POST" action="/signup">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lab">P A S S W O R D</label>
+
+                {% include 'graphical_password_2_signup.html' %}
+
+                <h5 style="color: red;font-size: 15px;">NOTE: Password Should Select 1 for each row</h5>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+
+
+<style>
+    .form-group {
+        border-radius: 10px;
+        border: 2px solid lightseagreen;
+        padding: 2px;
+    }
+    .lab {
+        font-weight: bold;
+    }
+    .lbb{
+        box-shadow: 2px 5px 25px  dimgray;
+        font-size: large;
+        cursor: pointer;
+        border-radius: 30px;
+        border: 2px solid whitesmoke;
+        padding: 40px;
+        margin: 5px 5px 5px;
+    }
+</style>
+
+
+{% endblock %}
+
+
